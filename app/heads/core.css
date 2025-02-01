@@ -1,0 +1,36 @@
+.core-container {
+  background: #1a1a1a;  /* Dark background */
+  min-height: 100vh;
+  padding: 2rem;
+  overflow-x: hidden;
+}
+
+.compartment {
+  margin-bottom: 2rem;  /* Reduced from 4rem */
+  padding: 1.5rem;      /* Reduced from 2rem */
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);  /* Darker compartment background */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.compartment-heading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.5rem;
+  color: #d4a024;  /* Changed to gold color to match cards */
+  margin-bottom: 1.5rem;  /* Reduced from 2rem */
+  padding-left: 1rem;
+  border-left: 5px solid rgba(212, 160, 36, 0.5);
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;  /* Reduced from 2rem */
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+  .cards-container {
+    justify-content: center;
+  }
+} 
