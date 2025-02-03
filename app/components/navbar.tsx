@@ -54,22 +54,22 @@ export default function App_Navbar() {
 
       <NavbarContent className="hidden sm:flex gap-4 " justify="center">
         <NavbarItem>
-          <Link className="text-xl" color="foreground" href="/event">
+          <Link className="text-2xl" color="foreground" href="/event">
             Event
           </Link>
         </NavbarItem>
         <NavbarItem >
-          <Link className="text-xl" aria-current="page" href="/gallery">
+          <Link className="text-2xl" aria-current="page" href="/gallery">
             Gallery
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-xl" color="foreground" href="/core">
+          <Link className="text-2xl" color="foreground" href="/core">
             Core
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-xl" color="foreground" href="/heads">
+          <Link className="text-2xl" color="foreground" href="/heads">
             Heads
           </Link>
         </NavbarItem>

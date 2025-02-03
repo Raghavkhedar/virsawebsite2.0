@@ -1,4 +1,5 @@
 .core-container {
+  margin-top: 1.5rem;
   background: #1a1a1a;  /* Dark background */
   min-height: 100vh;
   padding: 2rem;
@@ -24,8 +25,8 @@
 
 .cards-container {
   display: flex;
-  justify-content: space-between;
-  gap: 1rem;  /* Reduced from 2rem */
+  justify-content: space-evenly;
+  gap: 0.5rem;  /* Reduced from 2rem */
   flex-wrap: wrap;
 }
 
