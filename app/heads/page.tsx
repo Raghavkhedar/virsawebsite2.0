@@ -1,7 +1,7 @@
 import React from 'react'
 import App_Navbar from '../components/navbar'
-import CoreCards from '../components/CoreCards'
-import './core.css'
+import HeadsCards from '../components/HeadsCards'
+import './Heads.css'
 
 const Core = () => {
   const compartments = [
@@ -176,7 +176,7 @@ const Core = () => {
             <h2 className="compartment-heading">{compartment.heading}</h2>
             <div className="cards-container">
               {compartment.cards.map((card, cardIndex) => (
-                <CoreCards
+                <HeadsCards
                   key={cardIndex}
                   title={card.title}
                   description={card.description}

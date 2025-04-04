@@ -1,9 +1,15 @@
 import React from 'react'
 import App_Navbar from '../components/navbar'
+import ImageSlider from '../components/ImageSlider'
 
 const Event = () => {
   return (
-    <App_Navbar />
+    <div className="min-h-screen">
+      <App_Navbar />
+      <div >
+        <ImageSlider />
+      </div>
+    </div>
   )
 }
 

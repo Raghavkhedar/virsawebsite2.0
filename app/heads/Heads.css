@@ -1,9 +1,10 @@
 .core-container {
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   background: #1a1a1a;  /* Dark background */
   min-height: 100vh;
   padding: 2rem;
   overflow-x: hidden;
+  border-radius: 20px;
 }
 
 .compartment {

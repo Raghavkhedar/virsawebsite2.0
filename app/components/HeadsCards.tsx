@@ -1,13 +1,13 @@
 import React from 'react';
-import './CoreCards.css';
+import './HeadsCards.css';
 
-interface CoreCardsProps {
+interface HeadsCardsProps {
   title: string;
   description: string;
   imageUrl: string;
 }
 
-const CoreCards: React.FC<CoreCardsProps> = ({ title, description, imageUrl }) => {
+const HeadsCards: React.FC<HeadsCardsProps> = ({ title, description, imageUrl }) => {
   return (
     <div className="card" style={{ backgroundImage: `url(${imageUrl})` }}>
       <div className="bottom">
@@ -18,4 +18,4 @@ const CoreCards: React.FC<CoreCardsProps> = ({ title, description, imageUrl }) =
   );
 };
 
-export default CoreCards; 
+export default HeadsCards; 
