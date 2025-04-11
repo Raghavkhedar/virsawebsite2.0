@@ -1,17 +1,19 @@
 .core-container {
   margin-top: 0.5rem;
-  background: #1a1a1a;  /* Dark background */
+  background: url(https://imagizer.imageshack.com/img923/4084/G20M5N.jpg);  /* Dark background */
   min-height: 100vh;
   padding: 2rem;
   overflow-x: hidden;
   border-radius: 20px;
+  background-size:contain;
+  
 }
 
 .compartment {
   margin-bottom: 2rem;  /* Reduced from 4rem */
   padding: 1.5rem;      /* Reduced from 2rem */
   border-radius: 15px;
-  background: rgba(255, 255, 255, 0.05);  /* Darker compartment background */
+  background: rgba(100, 4, 4, 0.05);  /* Darker compartment background */
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
