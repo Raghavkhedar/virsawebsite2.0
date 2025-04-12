@@ -3,13 +3,13 @@
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/components/ui/button";
 import {
   Carousel,
   CarouselApi,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from "@/app/components/ui/carousel";
 
 export interface Gallery4Item {
   id: string;
