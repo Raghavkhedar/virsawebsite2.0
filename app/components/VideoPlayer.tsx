@@ -1,10 +1,19 @@
 "use client";
 
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 
 const VideoPlayer: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    // Try to manually play the video when component mounts
+    if (videoRef.current) {
+      videoRef.current.play().catch(error => {
+        console.error("Error playing video:", error);
+      });
+    }
+  }, []);
 
   return (
     <div 
@@ -17,16 +26,14 @@ const VideoPlayer: React.FC = () => {
         autoPlay 
         loop 
         muted
+        playsInline
       >
         <source 
-          src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" 
+          src="/NewVirsaVideo.mp4" 
           type="video/mp4" 
         />
         Your browser does not support the video tag.
       </video>
-      
-
-      
     </div>
   );
 };

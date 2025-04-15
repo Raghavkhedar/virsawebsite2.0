@@ -37,4 +37,37 @@
   .cards-container {
     justify-content: center;
   }
-} 
+}
+
+/* Add these styles to make Gen Secs section larger */
+.gen-secs-compartment {
+  width: 100%;
+  margin-bottom: 3rem;
+  height: 80vh;
+}
+
+.gen-secs-compartment .compartment-heading {
+  margin-bottom: 3rem; /* Increased padding between heading and cards */
+}
+
+.gen-secs-cards {
+  display: flex;
+  justify-content: center;
+  gap: 7rem; /* Increased from 2rem to 4rem for more spacing */
+  flex-wrap: wrap;
+}
+
+.gen-secs-cards > * {
+  flex: 0 0 auto;
+}
+
+@media (max-width: 768px) {
+  .gen-secs-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.gen-secs-cards > * {
+  transform: scale(1.2);
+}

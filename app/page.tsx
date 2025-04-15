@@ -1,9 +1,10 @@
 import React from "react";
 import App_Navbar from "./components/navbar";
-import MovieNight from "./components/EventsSlider";
-import {Gallery4Demo}  from "./components/galleryslider";
 import VideoPlayer from "./components/VideoPlayer";
 import PhotoSliderHome from "./components/PhotoSliderHome";
+import MovieNight from "./components/EventsSlider";
+import {Gallery4Demo}  from "./components/galleryslider";
+import { GlowingEffectDemo } from "./components/FactsHome";
 import { FooterSection } from "./components/footer-section";
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
       <App_Navbar />
 
       {/* Featured Video Section */}
-      <section className="w-full pb-40  ">
+      <section className="w-full pb-40">
         <div>
           <VideoPlayer />
         </div>
@@ -26,21 +27,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Events Section */}
-      {/* <div className="p-3">
-        <div className="flex justify-around gap-10 m-8 p-8 rounded-xl shadow-lg bg-zinc-600">
-          <div className="">text about the event</div>
-          <div>
-            <MovieNight />
-          </div>
-        </div>
-      </div> */}
+      {/* Gallery4Demo Section */}
+      <section className="bg-black">
+         <Gallery4Demo />
+      </section>
 
-        <Gallery4Demo />
-
+      {/* Facts Section */}
+      <section className="bg-black ">
+        <GlowingEffectDemo />
+      </section>
 
       {/* Footer Section */}
+      <section className="bg-black ">
       <FooterSection />
+      </section>
     </div>
   );
 }
