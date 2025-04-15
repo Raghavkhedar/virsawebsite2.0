@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fancyapps/ui": "^5.0.36",
     "@heroui/navbar": "^2.2.9",
     "@heroui/system": "^2.4.7",
     "@heroui/theme": "^2.4.6",

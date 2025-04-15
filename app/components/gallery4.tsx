@@ -10,6 +10,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/app/components/ui/carousel";
+import Link from 'next/link';
 
 export interface Gallery4Item {
   id: string;
@@ -152,7 +153,7 @@ const Gallery4 = ({
                 key={item.id}
                 className="max-w-[320px] pl-[20px] lg:max-w-[360px]"
               >
-                <a href={item.href} className="group rounded-xl">
+                <Link href={item.href} className="group rounded-xl">
                   <div className="group relative h-full min-h-[27rem] max-w-full overflow-hidden rounded-xl md:aspect-[5/4] lg:aspect-[16/9]">
                     <img
                       src={item.image}
@@ -173,7 +174,7 @@ const Gallery4 = ({
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
               </CarouselItem>
             ))}
           </CarouselContent>

@@ -32,7 +32,7 @@ export default function App_Navbar() {
   const menuItems = [
     { name: "Home", path: "/" },
     { name: "Gallery", path: "/gallery" },
-    { name: "Events", path: "/event" },
+    { name: "Events", path: "/events" },
     { name: "Core", path: "/core" },
     { name: "Heads", path: "/heads" },
   ];
@@ -54,7 +54,7 @@ export default function App_Navbar() {
 
       <NavbarContent className="hidden sm:flex gap-4 " justify="center">
         <NavbarItem>
-          <Link className="text-2xl" color="foreground" href="/event">
+          <Link className="text-2xl" color="foreground" href="/events">
             Event
           </Link>
         </NavbarItem>

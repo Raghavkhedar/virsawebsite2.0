@@ -15,7 +15,12 @@ interface TimelineItem {
   imageUrl: string;
 }
 
-const TimelineGallery: React.FC = () => {
+// Add this to the imports and props
+interface TimelineGalleryProps {
+  onYearChange?: (year: string) => void;
+}
+
+const TimelineGallery: React.FC<TimelineGalleryProps> = ({ onYearChange }) => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
@@ -73,6 +78,7 @@ const TimelineGallery: React.FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.timeline}>
+  
         <Swiper
           direction={isSmallScreen ? 'horizontal' : 'vertical'}
           modules={[Navigation, Pagination]}
@@ -89,6 +95,11 @@ const TimelineGallery: React.FC = () => {
           }}
           speed={1600}
           className={styles.swiperContainer}
+          onSlideChange={(swiper) => {
+            if (onYearChange) {
+              onYearChange(items[swiper.activeIndex].year);
+            }
+          }}
         >
           {items.map((item, index) => (
             <SwiperSlide
